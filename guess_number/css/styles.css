@@ -1,0 +1,102 @@
+body {
+    color: white;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    background-image: url('../img/numbers_wallpaper.jpeg');
+}
+
+header {
+    background: #900c3f80;
+}
+
+h1 {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+h2 {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+button,input{
+    font-family: "Iceland", sans-serif;
+    font-size: 0.8em;
+}
+
+.gameStats {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #c7003899;
+}
+
+#guesses {
+    color: #AEA2FE;
+    font-size: 1.7em;
+}
+
+#resetBtn{
+    margin: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: #AEA2FE solid;
+    color: #AEA2FE;
+    border-radius: 20%;
+    transition: all 0.5s;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:enabled:hover {
+    transition-duration: 0.3s;
+    background-color: #AEA2FE;
+    color: #451251;
+    border-radius: 20%;
+}
+
+button:enabled span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+button:enabled span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:enabled:hover span {
+  padding-right: 25px;
+}
+
+
+button:enabled:hover span:after {
+  opacity: 1;
+  right: 0;
+}

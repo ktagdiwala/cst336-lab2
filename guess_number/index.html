@@ -3,6 +3,10 @@
     <head>
         <title> Guess a Number </title>
         <meta charset="utf-8">
+        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Iceland&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -11,15 +15,21 @@
         </header>
         <br>
         <div id="main">
-          Enter a guess: 
-          <input type="text" id="playerGuess" size="5">         
-          <button id="guessBtn"> Guess </button> <br>
-          <button id="resetBtn"> Reset </button>
-          <div id ="feedback"></div>
-          <div>Previous Guesses:
-            <span id = "guesses"></span>
-          </div>
+            <p>
+                Enter a guess: 
+                <input type="text" id="playerGuess" size="5">         
+                <button id="guessBtn"><span> Guess </span></button> <br>
+                <button id="resetBtn"><span> Reset </span></button>
+                <p id ="feedback"></p>
+            </p>
+            <p>Attempts left: <span id="attemptsLeft"></span></p>
+            <p>Previous Guesses:</p>
+            <p><span id = "guesses"></span></p>
+            <div class = "gameStats">
+                <p>Wins: <span id="wins"></span></p>
+                <p>Losses: <span id="losses"></span></p>
+            </div>
         </div>
-        <script src="js/script.js"></script>    
+        <script src="js/script.js"></script>
     </body>
 </html>
